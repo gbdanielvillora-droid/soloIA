@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="LOCO AI: herramientas de inteligencia artificial sencillas para escribir, resumir, crear ideas y trabajar mejor.">
+<meta name="theme-color" content="#080b14">
+<title>LOCO AI — Herramientas de IA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#inicio"><span>✦</span> LOCO AI</a>
+  <nav><a href="#herramientas">Herramientas</a><a href="#como">Cómo funciona</a><a href="#faq">FAQ</a></nav>
+  <a class="nav-cta" href="#herramientas">Probar gratis</a>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="pill">✦ Herramientas de inteligencia artificial</div>
+  <h1>Haz más.<br><em>Con IA.</em></h1>
+  <p>Una colección de herramientas sencillas para escribir, resumir, generar ideas y mejorar tu productividad.</p>
+  <div class="actions"><a class="btn primary" href="#herramientas">Explorar herramientas →</a><a class="btn ghost" href="#como">Cómo funciona</a></div>
+  <div class="stats"><div><b>10+</b><span>herramientas</span></div><div><b>Gratis</b><span>para empezar</span></div><div><b>24/7</b><span>disponible</span></div></div>
+</section>
+
+<section class="section" id="herramientas">
+  <div class="section-top"><div><small>HERRAMIENTAS</small><h2>Tu caja de herramientas de IA.</h2></div><label class="search">⌕ <input id="search" placeholder="Buscar herramienta..."></label></div>
+  <div class="cats">
+    <button class="cat active" data-cat="all">Todas</button><button class="cat" data-cat="writing">Escritura</button>
+    <button class="cat" data-cat="productivity">Productividad</button><button class="cat" data-cat="creative">Creatividad</button><button class="cat" data-cat="coding">Código</button>
+  </div>
+  <div class="grid" id="grid">
+    <article class="card" data-cat="writing" data-name="Generador de prompts"><div class="ico">✦</div><span class="label">POPULAR</span><h3>Generador de prompts</h3><p>Crea prompts claros y detallados para sacar más partido a cualquier IA.</p><button onclick="openTool('prompt')">Abrir herramienta →</button></article>
+    <article class="card" data-cat="writing" data-name="Resumidor de textos"><div class="ico">≡</div><h3>Resumidor de textos</h3><p>Reduce un texto a sus ideas principales directamente en tu navegador.</p><button onclick="openTool('summary')">Abrir herramienta →</button></article>
+    <article class="card" data-cat="writing" data-name="Mejorador de texto"><div class="ico">Aa</div><h3>Mejorador de texto</h3><p>Reescribe un texto para hacerlo más claro, profesional o natural.</p><button onclick="openTool('rewrite')">Abrir herramienta →</button></article>
+    <article class="card" data-cat="writing" data-name="Generador de emails"><div class="ico">✉</div><h3>Generador de emails</h3><p>Prepara rápidamente la estructura de un email profesional.</p><button onclick="openTool('email')">Abrir herramienta →</button></article>
+    <article class="card" data-cat="productivity" data-name="Generador de ideas"><div class="ico">☼</div><h3>Generador de ideas</h3><p>Convierte un tema en ideas para contenido, proyectos o negocios.</p><button onclick="openTool('ideas')">Abrir herramienta →</button></article>
+    <article class="card" data-cat="creative" data-name="Ideas para imágenes"><div class="ico">◈</div><h3>Prompt para imágenes</h3><p>Genera una plantilla de prompt para crear imágenes con IA.</p><button onclick="openTool('image')">Abrir herramienta →</button></article>
+    <article class="card" data-cat="coding" data-name="Explicador de código"><div class="ico">&lt;/&gt;</div><h3>Explicador de código</h3><p>Organiza preguntas y explicaciones para entender fragmentos de código.</p><button onclick="openTool('code')">Abrir herramienta →</button></article>
+    <article class="card" data-cat="productivity" data-name="Planificador"><div class="ico">✓</div><h3>Planificador rápido</h3><p>Crea una estructura de tareas a partir de un objetivo.</p><button onclick="openTool('plan')">Abrir herramienta →</button></article>
+    <article class="card" data-cat="creative" data-name="Generador de títulos"><div class="ico">T</div><h3>Generador de títulos</h3><p>Obtén propuestas de títulos para vídeos, artículos o publicaciones.</p><button onclick="openTool('titles')">Abrir herramienta →</button></article>
+    <article class="card" data-cat="productivity" data-name="Traductor"><div class="ico">文</div><h3>Asistente de traducción</h3><p>Prepara una traducción con contexto, tono y público objetivo.</p><button onclick="openTool('translate')">Abrir herramienta →</button></article>
+  </div>
+</section>
+
+<section class="how" id="como"><small>CÓMO FUNCIONA</small><h2>Simple. Rápido. Sin complicaciones.</h2><div class="steps"><div><b>01</b><h3>Elige una herramienta</h3><p>Selecciona lo que necesitas desde la biblioteca.</p></div><div><b>02</b><h3>Introduce tu contenido</h3><p>Escribe un tema, texto u objetivo.</p></div><div><b>03</b><h3>Obtén el resultado</h3><p>Usa la plantilla generada y llévala a tu IA favorita.</p></div></div></section>
+
+<section class="faq" id="faq"><small>FAQ</small><h2>Preguntas frecuentes</h2>
+<details><summary>¿LOCO AI es gratis?</summary><p>La versión inicial está pensada para ofrecer herramientas gratuitas. Algunas funciones futuras podrían depender de servicios externos.</p></details>
+<details><summary>¿Las herramientas usan IA?</summary><p>Esta V1 incluye herramientas que funcionan en el navegador y asistentes que generan prompts o estructuras. Las funciones con modelos de IA conectados se pueden añadir posteriormente mediante una API.</p></details>
+<details><summary>¿Guardáis mis textos?</summary><p>En esta versión, las herramientas locales procesan el contenido en tu navegador. Antes de añadir servicios externos se indicará qué datos se envían y para qué.</p></details>
+</section>
+</main>
+
+<footer><div class="brand">✦ LOCO AI</div><p>Herramientas de IA para crear más rápido.</p><div class="footlinks"><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a><a href="aviso-legal.html">Aviso legal</a><a href="contacto.html">Contacto</a></div><small>© 2026 LOCO AI</small></footer>
+
+<div class="modal" id="modal"><div class="modal-box"><button class="close" onclick="closeTool()">×</button><span class="modal-label">HERRAMIENTA</span><h2 id="modalTitle"></h2><p id="modalDesc"></p><label>Tu contenido</label><textarea id="input" rows="7" placeholder="Escribe aquí..."></textarea><button class="btn primary full" onclick="runTool()">Generar resultado</button><div id="result" class="result"></div></div></div>
+<script src="script.js"></script>
+</body>
+</html>
